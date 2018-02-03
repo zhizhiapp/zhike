@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bj">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x96"
+            android:background="@drawable/intelligenttest_title_backg">
+
+
+            <ImageView
+                android:id="@+id/about_return"
+                android:layout_width="@dimen/x40"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/x26"
+                android:layout_marginLeft="@dimen/x30"
+                android:layout_marginTop="@dimen/x26"
+                android:src="@drawable/intelligenttest_return" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="关于我们"
+                android:textStyle="bold"
+                android:textColor="@color/homeText"
+                android:textSize="@dimen/x35" />
+
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="@dimen/x127"
+            android:layout_height="@dimen/x143"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/x64"
+            android:src="@drawable/login" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/x23"
+            android:gravity="center"
+            android:text="关于我们"
+            android:textColor="#6f6f6f"
+            android:textSize="@dimen/x30" />
+
+        <TextView
+            android:id="@+id/about_version"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/x15"
+            android:gravity="center"
+            android:text="V1.1.1"
+            android:textColor="#6f6f6f"
+            android:textSize="@dimen/x24" />
+
+        <Button
+            android:id="@+id/about_zk"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x48"
+            android:layout_marginTop="@dimen/x42"
+            android:background="@color/touS"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/x28"
+            android:text="关于雄松智课" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x3"
+            android:layout_marginTop="@dimen/x35"
+            android:background="#dddee0" />
+
+
+        <Button
+            android:id="@+id/about_opinion"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x48"
+            android:layout_marginTop="@dimen/x42"
+            android:background="@color/touS"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/x28"
+            android:text="意见与反馈" />
+
+
+        <Button
+            android:id="@+id/about_update"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x48"
+            android:layout_marginTop="@dimen/x42"
+            android:background="@color/touS"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/x28"
+            android:text="版本更新" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="48dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/about_zeren"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#00000000"
+                android:gravity="center_vertical"
+                android:text="《软件许可及服务协议》"
+                android:textColor="@color/about"
+                android:textSize="@dimen/x24" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="和"
+                android:textColor="#6f6f6f"
+                android:textSize="@dimen/x24" />
+
+            <Button
+                android:id="@+id/about_zhence"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#00000000"
+                android:gravity="center_vertical"
+                android:onClick="about"
+                android:text="《隐私政策》"
+                android:textColor="@color/about"
+                android:textSize="@dimen/x24" />
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/x17"
+            android:gravity="center"
+            android:text="广东雄松智能科技有限公司版权所有"
+            android:textColor="#6f6f6f"
+            android:textSize="@dimen/x24" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

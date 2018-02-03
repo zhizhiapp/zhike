@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">   
+<!-- 连框颜色值 --><item>   
+      <shape>   
+            <solid android:color="@color/homeText" />
+      </shape>   
+</item>   
+<!-- 主体背景颜色值 -->
+
+<item android:bottom="@dimen/x2" android:right="@dimen/x2" android:top="@dimen/x2" android:left="@dimen/x2">
+     <shape>
+           <solid android:color="@color/baiS" />
+     </shape>
+</item>  
+</layer-list>  

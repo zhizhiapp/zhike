@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f6f7f9">
+
+
+    <LinearLayout
+        android:id="@+id/toast_single_exercise_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x96"
+            android:background="@color/baiS"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/x28"
+            android:paddingRight="@dimen/x28">
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:layout_width="@dimen/x48"
+                    android:layout_height="@dimen/x48"
+                    android:layout_gravity="center"
+                    android:src="@drawable/intelligence_collection_no" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/x20"
+                    android:gravity="center"
+                    android:text="收藏"
+                    android:textColor="@color/heiS"
+                    android:textSize="@dimen/x36" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:layout_width="@dimen/x48"
+                    android:layout_height="@dimen/x48"
+                    android:layout_gravity="center"
+                    android:src="@drawable/single_exercise_gou" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/x20"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@color/heiS"
+                    android:textSize="@dimen/x36" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:layout_width="@dimen/x48"
+                    android:layout_height="@dimen/x48"
+                    android:layout_gravity="center"
+                    android:src="@drawable/single_exercise_x" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/x20"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@color/heiS"
+                    android:textSize="@dimen/x36" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/toast_single_exercise_pow"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:layout_width="@dimen/x48"
+                    android:layout_height="@dimen/x48"
+                    android:layout_gravity="center"
+                    android:src="@drawable/single_exercise_more" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/x20"
+                    android:gravity="center"
+                    android:text="90/99"
+                    android:textColor="@color/heiS"
+                    android:textSize="@dimen/x36" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:paddingBottom="@dimen/x25"
+            android:paddingTop="@dimen/x25"
+            android:paddingLeft="@dimen/x47"
+            android:paddingRight="@dimen/x47"
+            android:id="@+id/toast_single_exercise_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x600"
+            android:overScrollMode="never" />
+
+
+    </LinearLayout>
+</LinearLayout>

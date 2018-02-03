@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/_single_exercise"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bj">
+
+
+    <RelativeLayout
+        android:id="@+id/single_exercise_relative"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x96"
+        android:background="@drawable/intelligenttest_title_backg">
+
+
+        <ImageView
+            android:id="@+id/single_exercise_return"
+            android:layout_width="@dimen/x40"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/x26"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_marginTop="@dimen/x26"
+            android:src="@drawable/intelligenttest_return" />
+
+        <TextView
+            android:textStyle="bold"
+            android:id="@+id/single_exercise_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="单题练习"
+            android:textColor="@color/homeText"
+            android:textSize="@dimen/x35" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/single_exercise_text"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x64"
+        android:layout_below="@+id/single_exercise_relative"
+        android:gravity="center"
+        android:text="建议时间: 1分钟"
+        android:textColor="@color/dtText"
+        android:textSize="@dimen/x24" />
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/single_exercise_pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/xxx"
+        android:layout_below="@+id/single_exercise_text"
+        android:overScrollMode="never" />
+
+
+    <LinearLayout
+        android:id="@+id/xxx"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x96"
+        android:layout_alignParentBottom="true"
+        android:background="@color/baiS"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/x28"
+        android:paddingRight="@dimen/x28">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="@dimen/x48"
+                android:layout_height="@dimen/x48"
+                android:layout_gravity="center"
+                android:src="@drawable/intelligence_collection_no" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/x20"
+                android:gravity="center"
+                android:text="收藏"
+                android:textColor="@color/heiS"
+                android:textSize="@dimen/x36" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="@dimen/x48"
+                android:layout_height="@dimen/x48"
+                android:layout_gravity="center"
+                android:src="@drawable/single_exercise_gou" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/x20"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/heiS"
+                android:textSize="@dimen/x36" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="@dimen/x48"
+                android:layout_height="@dimen/x48"
+                android:layout_gravity="center"
+                android:src="@drawable/single_exercise_x" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/x20"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/heiS"
+                android:textSize="@dimen/x36" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/single_exercise_more"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="@dimen/x48"
+                android:layout_height="@dimen/x48"
+                android:layout_gravity="center"
+                android:src="@drawable/single_exercise_more" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/x20"
+                android:gravity="center"
+                android:text="90/99"
+                android:textColor="@color/heiS"
+                android:textSize="@dimen/x36" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/single_exercise_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#A1010000"
+        android:orientation="vertical"
+        android:visibility="gone" />
+
+
+</RelativeLayout>

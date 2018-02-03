@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/baiS"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:id="@+id/pager_single_exercise_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/x28"
+            android:paddingRight="@dimen/x28"
+            android:paddingTop="@dimen/x20">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/pager_single_exercise_dx"
+                android:gravity="center"
+                android:text="单选题"
+                android:textColor="@color/baiS"
+                android:textSize="@dimen/x24" />
+
+
+            <TextView
+                android:id="@+id/pager_single_exercise_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/x50"
+                android:layout_marginTop="@dimen/x20"
+                android:gravity="center_vertical"
+                android:lineSpacingExtra="@dimen/x8"
+                android:text="1. 这是题目这是题目这是题目这是题目这是题目"
+                android:textColor="@color/heiS"
+                android:textSize="@dimen/x24" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/pager_single_exercise_title_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:overScrollMode="never" />
+
+            <LinearLayout
+                android:id="@+id/pager_single_exercise_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+
+                <Button
+                    android:layout_width="@dimen/x168"
+                    android:layout_height="@dimen/x44"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/x20"
+                    android:layout_marginTop="@dimen/x30"
+                    android:background="@drawable/examination_analysis_backg"
+                    android:text="试题讲解"
+                    android:textColor="@color/heiS"
+                    android:textSize="@dimen/x26" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="参考答案 :"
+                        android:textColor="@color/heiS"
+                        android:textSize="@dimen/x26" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/x18"
+                        android:gravity="center_vertical"
+                        android:text="A"
+                        android:textColor="@color/homeText"
+                        android:textSize="@dimen/x24" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/x40"
+                        android:gravity="center_vertical"
+                        android:text="您的答案 :"
+                        android:textColor="@color/heiS"
+                        android:textSize="@dimen/x26" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/x18"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="C"
+                        android:textColor="@color/homeText"
+                        android:textSize="@dimen/x24" />
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/x26"
+                            android:layout_height="@dimen/x25"
+                            android:layout_gravity="center"
+                            android:src="@drawable/pager_single_edit" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/x6"
+                            android:gravity="center_vertical"
+                            android:text="纠错"
+                            android:textColor="@color/heiS"
+                            android:textSize="@dimen/x24" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/x20"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/x26"
+                        android:layout_height="@dimen/x25"
+                        android:layout_gravity="center"
+                        android:src="@drawable/pager_single_sj" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/x12"
+                        android:gravity="center_vertical"
+                        android:text="试卷难度 :"
+                        android:textColor="@color/heiS"
+                        android:textSize="@dimen/x24" />
+
+
+                    <ImageView
+                        android:layout_width="@dimen/x26"
+                        android:layout_height="@dimen/x25"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/x36"
+                        android:src="@drawable/pager_single_xx_yes" />
+
+                    <ImageView
+                        android:layout_width="@dimen/x26"
+                        android:layout_height="@dimen/x25"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/x12"
+                        android:src="@drawable/pager_single_xx_yes" />
+
+                    <ImageView
+                        android:layout_width="@dimen/x26"
+                        android:layout_height="@dimen/x25"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/x12"
+                        android:src="@drawable/pager_single_xx_yes" />
+
+                    <ImageView
+                        android:layout_width="@dimen/x26"
+                        android:layout_height="@dimen/x25"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/x12"
+                        android:src="@drawable/pager_single_xx_yes" />
+
+                    <ImageView
+                        android:layout_width="@dimen/x26"
+                        android:layout_height="@dimen/x25"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/x12"
+                        android:src="@drawable/pager_single_xx_yes" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/x20"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/x26"
+                        android:layout_height="@dimen/x25"
+                        android:layout_gravity="center"
+                        android:src="@drawable/pager_single_tj" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/x12"
+                        android:gravity="center_vertical"
+                        android:text="统        计 :"
+                        android:textColor="@color/heiS"
+                        android:textSize="@dimen/x24" />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x35"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical"
+                        android:lineSpacingExtra="@dimen/x8"
+                        android:lines="2"
+                        android:text="结果符合法国符果符合法韩国符合方结果符合法国符果符合法韩国符合方"
+                        android:textColor="@color/heiS"
+                        android:textSize="@dimen/x24" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/x25"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/x96">
+
+                    <ImageView
+                        android:layout_width="@dimen/x26"
+                        android:layout_height="@dimen/x25"
+                        android:layout_gravity="center"
+                        android:src="@drawable/pager_single_ck" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/x12"
+                        android:gravity="center_vertical"
+                        android:text="参考解析 :"
+                        android:textColor="@color/heiS"
+                        android:textSize="@dimen/x24" />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x35"
+                        android:gravity="center_vertical"
+                        android:lineSpacingExtra="@dimen/x8"
+                        android:text="结果符合符合结果符合法韩国符合方结果符合法韩国符合方结果符合法韩国符合方结果符合法韩国符合方结果符合法韩国符合方结果符合法韩国符合方开放干净大方:"
+                        android:textColor="@color/heiS"
+                        android:textSize="@dimen/x24" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

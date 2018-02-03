@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/item_recycler_wisdom_scheme_linear_he"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/zhbj"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/x28"
+        android:paddingRight="@dimen/x28">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x96"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/item_recycler_wisdom_scheme_linear_nun"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="1 ."
+                android:textColor="@color/homeText"
+                android:textSize="@dimen/x36"
+                android:textStyle="bold"/>
+
+
+            <TextView
+                android:id="@+id/item_recycler_wisdom_scheme_linear_title"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/x15"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="实数"
+                android:textColor="@color/heiS"
+                android:textSize="@dimen/x30"/>
+
+
+            <ImageView
+                android:id="@+id/item_recycler_wisdom_scheme_linear_img"
+                android:layout_width="@dimen/x16"
+                android:layout_height="@dimen/x26"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/x35"
+                android:scaleType="fitXY"
+                android:src="@drawable/microclass_more"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/item_recycler_wisdom_scheme_linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x60"
+            android:layout_marginBottom="@dimen/x17"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+
+            <Button
+                android:id="@+id/item_recycler_wisdom_scheme_linear_microclass"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/x28"
+                android:layout_weight="1"
+                android:background="@drawable/examination_analysis_backg"
+                android:text="微课"
+                android:textSize="@dimen/x30"/>
+
+            <Button
+                android:id="@+id/item_recycler_wisdom_scheme_linear_exercises"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/x49"
+                android:layout_weight="1"
+                android:background="@drawable/examination_analysis_backg"
+                android:text="习题"
+                android:textSize="@dimen/x30"/>
+
+            <Button
+                android:id="@+id/item_recycler_wisdom_scheme_linear_knowledge"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/x49"
+                android:layout_marginRight="@dimen/x28"
+                android:layout_weight="1"
+                android:background="@drawable/examination_analysis_backg"
+                android:text="知识库"
+                android:textSize="@dimen/x30"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bj"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x96"
+        android:background="@drawable/intelligenttest_title_backg">
+
+
+        <ImageView
+            android:id="@+id/my_loding_return"
+            android:layout_width="@dimen/x40"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/x26"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_marginTop="@dimen/x26"
+            android:src="@drawable/intelligenttest_return" />
+
+        <TextView
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="我的下载"
+            android:textColor="@color/homeText"
+            android:textSize="@dimen/x35" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x70"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/my_loding_micro_class"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/baiS"
+            android:text="微课"
+            android:textColor="@color/huiS"
+            android:textSize="@dimen/x30" />
+
+        <Button
+            android:id="@+id/my_loding_open"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/myloding"
+            android:text="公开课"
+            android:textColor="@color/huiS"
+            android:textSize="@dimen/x30" />
+
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/my_loding_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never" />
+
+
+</LinearLayout>

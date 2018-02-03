@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bj"
+              android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x96"
+        android:background="@drawable/intelligenttest_title_backg">
+
+
+        <ImageView
+            android:id="@+id/my_openclass_return"
+            android:layout_width="@dimen/x40"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/x26"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_marginTop="@dimen/x26"
+            android:src="@drawable/intelligenttest_return"/>
+
+        <TextView
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="公开课"
+            android:textColor="@color/homeText"
+            android:textSize="@dimen/x35"/>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/my_openclass_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_width="@dimen/x128"
+            android:layout_height="@dimen/x94"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/x117"
+            android:src="@drawable/my_collection_no_openclass"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/x25"
+            android:gravity="center"
+            android:text="暂无公开课"
+            android:textColor="@color/collection"
+            android:textSize="@dimen/x30"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/x28"
+            android:gravity="center"
+            android:text="快去别的页面页面学习吧!"
+            android:textColor="@color/collection"
+            android:textSize="@dimen/x30"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/x95"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/my_openclass_micro"
+                android:layout_width="@dimen/x215"
+                android:layout_height="@dimen/x63"
+                android:layout_gravity="center"
+                android:background="@drawable/examination_analysis_backg"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="微课"
+                android:textColor="@color/homeText"
+                android:textSize="@dimen/x40"/>
+
+
+            <TextView
+                android:id="@+id/my_openclass_exercises"
+                android:layout_width="@dimen/x215"
+                android:layout_height="@dimen/x63"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/x46"
+                android:background="@drawable/examination_analysis_backg"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="习题"
+                android:textColor="@color/homeText"
+                android:textSize="@dimen/x40"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/x37"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/my_openclass_knowledge"
+                android:layout_width="@dimen/x215"
+                android:layout_height="@dimen/x63"
+                android:layout_gravity="center"
+                android:background="@drawable/examination_analysis_backg"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="知识库"
+                android:textColor="@color/homeText"
+                android:textSize="@dimen/x40"/>
+
+
+            <TextView
+                android:id="@+id/my_openclass_zhenti"
+                android:layout_width="@dimen/x215"
+                android:layout_height="@dimen/x63"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/x46"
+                android:background="@drawable/examination_analysis_backg"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="真题"
+                android:textColor="@color/homeText"
+                android:textSize="@dimen/x40"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/my_openclass_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:overScrollMode="never"/>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

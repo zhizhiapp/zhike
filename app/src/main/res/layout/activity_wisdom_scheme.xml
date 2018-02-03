@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bj"
+              android:orientation="vertical">
+
+
+    <ScrollView
+        android:id="@+id/wisdom_scheme_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x28"
+                android:layout_marginRight="@dimen/x28"
+                android:layout_marginTop="@dimen/x30"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/x46"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/a1"/>
+
+                <TextView
+                    android:id="@+id/wisdom_scheme_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/b2"
+                    android:gravity="center_vertical"
+                    android:lineSpacingExtra="@dimen/x12"
+                    android:paddingLeft="@dimen/x9"
+                    android:paddingRight="@dimen/x9"
+                    android:textColor="@color/homeText"
+                    android:textSize="@dimen/x26"/>
+
+
+                <TextView
+                    android:id="@+id/wisdom_scheme_contont"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/b2"
+                    android:gravity="center_vertical"
+                    android:lineSpacingExtra="@dimen/x12"
+                    android:paddingLeft="@dimen/x9"
+                    android:paddingRight="@dimen/x9"
+                    android:paddingTop="@dimen/x16"
+                    android:text="你跟上次的测试区不是非常非常非常的大而已洁"
+                    android:textColor="@color/homeText"
+                    android:textSize="@dimen/x26"
+                    android:textStyle="bold"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/x40"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/a3"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/x28"
+                android:paddingRight="@dimen/x28">
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/x46"
+                    android:layout_weight="1"
+                    android:text="小雄老师推荐以下课程 :"
+                    android:textColor="@color/homeText"
+                    android:textSize="@dimen/x30"/>
+
+
+                <Button
+                    android:id="@+id/wisdom_scheme_butt_recommended_courses"
+                    android:layout_width="@dimen/x95"
+                    android:layout_height="@dimen/x41"
+                    android:layout_marginTop="@dimen/x34"
+                    android:background="@drawable/wisdom_scheme_hyz"
+                    android:text="换一组"
+                    android:textColor="@color/homeText"
+                    android:textSize="@dimen/x24"/>
+
+
+            </LinearLayout>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x15"
+                app:cardBackgroundColor="@color/baiS">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/wisdom_scheme_recycler_recommended_courses"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:overScrollMode="never"/>
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x69"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/x132"
+                    android:layout_weight="1"
+                    android:src="@drawable/wisdom_scheme_zuo"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x16"
+                    android:layout_marginRight="@dimen/x16"
+                    android:text="猜你喜欢"
+                    android:textColor="@color/homeText"
+                    android:textSize="@dimen/x24"/>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/x132"
+                    android:layout_weight="1"
+                    android:src="@drawable/wisdom_scheme_you"/>
+
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/wisdom_scheme_butt_love"
+                android:layout_width="@dimen/x95"
+                android:layout_height="@dimen/x41"
+                android:layout_gravity="right"
+                android:layout_marginBottom="@dimen/x18"
+                android:layout_marginRight="@dimen/x28"
+                android:layout_marginTop="@dimen/x38"
+                android:background="@drawable/wisdom_scheme_hyz"
+                android:text="换一组"
+                android:textColor="@color/homeText"
+                android:textSize="@dimen/x24"/>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x15"
+                app:cardBackgroundColor="@color/baiS">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/wisdom_scheme_recycler_love"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="@dimen/x28"
+                        android:layout_marginLeft="@dimen/x28"
+                        android:layout_marginRight="@dimen/x28"
+                        android:layout_marginTop="@dimen/x18"
+                        android:overScrollMode="never"/>
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

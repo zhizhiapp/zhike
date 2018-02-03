@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/x10"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/x20"
+            android:paddingTop="@dimen/x20"><!--android:padding="@dimen/x20"-->
+
+            <TextView
+                android:id="@+id/tv_question"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/x20"
+                android:paddingRight="@dimen/x20"
+                android:text="1.问题"
+                android:textColor="@color/homeText"
+                android:textSize="@dimen/x30" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x10"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ll_option_A"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/x15">
+
+                    <FrameLayout
+                        android:id="@+id/fl_A"
+                        android:layout_width="@dimen/x58"
+                        android:layout_height="@dimen/x58"
+                        android:background="@drawable/ic_option_un">
+
+                        <TextView
+                            android:id="@+id/tv_A"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="A"
+                            android:textColor="@color/heiS"
+                            android:textSize="@dimen/x23" />
+                    </FrameLayout>
+
+
+                    <TextView
+                        android:id="@+id/tv_option_A"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x10"
+                        android:layout_marginStart="@dimen/x10"
+                        android:gravity="center_vertical"
+                        android:text="" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ll_option_B"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/x15">
+
+                    <FrameLayout
+                        android:id="@+id/fl_B"
+                        android:layout_width="@dimen/x58"
+                        android:layout_height="@dimen/x58"
+                        android:background="@drawable/ic_option_un">
+
+                        <TextView
+                            android:id="@+id/tv_B"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="B"
+                            android:textColor="@color/heiS"
+                            android:textSize="@dimen/x23" />
+                    </FrameLayout>
+
+                    <TextView
+                        android:id="@+id/tv_option_B"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x10"
+                        android:layout_marginStart="@dimen/x10"
+                        android:gravity="center_vertical"
+                        android:text="" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_option_C"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/x15">
+
+                    <FrameLayout
+                        android:id="@+id/fl_C"
+                        android:layout_width="@dimen/x58"
+                        android:layout_height="@dimen/x58"
+                        android:background="@drawable/ic_option_un">
+
+                        <TextView
+                            android:id="@+id/tv_C"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="C"
+                            android:textColor="@color/heiS"
+                            android:textSize="@dimen/x23" />
+                    </FrameLayout>
+
+                    <TextView
+
+                        android:id="@+id/tv_option_C"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x10"
+                        android:layout_marginStart="@dimen/x10"
+                        android:gravity="center_vertical"
+                        android:text="" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_option_D"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/x15">
+
+                    <FrameLayout
+                        android:id="@+id/fl_D"
+                        android:layout_width="@dimen/x58"
+                        android:layout_height="@dimen/x58"
+                        android:background="@drawable/ic_option_un">
+
+                        <TextView
+                            android:id="@+id/tv_D"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="D"
+                            android:textColor="@color/heiS"
+                            android:textSize="@dimen/x23" />
+                    </FrameLayout>
+
+                    <TextView
+                        android:id="@+id/tv_option_D"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x10"
+                        android:layout_marginStart="@dimen/x10"
+                        android:gravity="center_vertical"
+                        android:text="" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_option_E"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/x15">
+
+                    <FrameLayout
+                        android:id="@+id/fl_E"
+                        android:layout_width="@dimen/x58"
+                        android:layout_height="@dimen/x58"
+                        android:background="@drawable/ic_option_un">
+
+                        <TextView
+                            android:id="@+id/tv_E"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="E"
+                            android:textColor="@color/heiS"
+                            android:textSize="@dimen/x23" />
+                    </FrameLayout>
+
+                    <TextView
+                        android:id="@+id/tv_option_E"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x10"
+                        android:layout_marginStart="@dimen/x10"
+                        android:gravity="center_vertical"
+                        android:text="" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

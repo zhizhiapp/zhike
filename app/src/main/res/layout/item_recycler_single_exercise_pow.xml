@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/item_recycler_single_exercise_pow_title"
+        android:layout_width="@dimen/x64"
+        android:layout_height="@dimen/x64"
+        android:background="@drawable/intelligenttest_yes_problem"
+        android:gravity="center"
+        android:text="1"
+        android:textColor="@color/homeText"
+        android:textSize="@dimen/x43" />
+
+</LinearLayout>

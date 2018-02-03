@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x86"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/x28">
+
+        <ImageView
+            android:id="@+id/item_recycler_pager_sign_rise_img"
+            android:layout_width="@dimen/x48"
+            android:layout_height="@dimen/x48"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/sign_fxs"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x23"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/item_recycler_pager_sign_rise_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="推荐好友加入"
+                    android:textColor="@color/heiS"
+                    android:textSize="@dimen/x24"/>
+
+
+                <TextView
+                    android:id="@+id/item_recycler_pager_sign_rise_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/x20"
+                    android:gravity="center_vertical"
+                    android:text="+600"
+                    android:textColor="@color/homeText"
+                    android:textSize="@dimen/x24"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/item_recycler_pager_sign_rise_contont"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/x9"
+                android:gravity="center_vertical"
+                android:text="将“雄松智课”推荐给有需要的好友，立获600积分"
+                android:textColor="#878787"
+                android:textSize="@dimen/x20"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_marginTop="@dimen/x17"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x2"
+        android:layout_marginLeft="@dimen/x28"
+        android:layout_marginRight="@dimen/x28"
+        android:background="#e5e5e5"/>
+
+</LinearLayout>

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_inviting_friends"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.zhike.InvitingFriendsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x96"
+        android:background="@drawable/intelligenttest_title_backg">
+
+        <ImageView
+            android:id="@+id/black"
+            android:layout_width="@dimen/x40"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/x26"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_marginTop="@dimen/x26"
+            android:src="@drawable/intelligenttest_return" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="推广大使二维码"
+            android:textColor="@color/homeText"
+            android:textSize="@dimen/x35" />
+
+
+        <LinearLayout
+            android:id="@+id/exercises_choice"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/x28"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/exercises_choice_text"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:padding="@dimen/x23"
+                android:text="分享"
+                android:textColor="@color/homeText"
+                android:textSize="@dimen/x28" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/ll_vp_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/x100"
+            android:clipChildren="false"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/vp_horizon"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/x60"
+                android:layout_marginRight="@dimen/x60"
+                android:clipChildren="false" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_qr_code_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:background="#e0e0e0" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x80"
+                android:background="@color/baiS"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/x28"
+                android:paddingRight="@dimen/x28">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="二维码使用指南"
+                    android:textColor="#31ac7d"
+                    android:textSize="@dimen/x30" />
+
+                <LinearLayout
+                    android:id="@+id/ll_know_qr_code_help"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="了解详情"
+                        android:textColor="@color/heiS"
+                        android:textSize="@dimen/x24" />
+
+                    <ImageView
+                        android:id="@+id/iv_details"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x17"
+                        android:src="@drawable/ic_inviting_details" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_qr_code_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/baiS"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/x10"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/x20"
+                    android:text="@string/inviting_friends_qr_help_title_1"
+                    android:textColor="#31ac7d"
+                    android:textSize="@dimen/x30" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/x20"
+                    android:paddingRight="@dimen/x20"
+                    android:text="@string/inviting_friends_qr_help_content_1"
+                    android:textColor="@color/heiS" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/x15"
+                    android:padding="@dimen/x20"
+                    android:text="@string/inviting_friends_qr_help_title_2"
+                    android:textColor="#31ac7d"
+                    android:textSize="@dimen/x30" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/x20"
+                    android:paddingRight="@dimen/x20"
+                    android:text="@string/inviting_friends_qr_help_content_2"
+                    android:textColor="@color/heiS" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/x15"
+                    android:padding="@dimen/x20"
+                    android:text="@string/inviting_friends_qr_help_title_3"
+                    android:textColor="#31ac7d"
+                    android:textSize="@dimen/x30" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/x20"
+                    android:paddingRight="@dimen/x20"
+                    android:text="@string/inviting_friends_qr_help_content_3"
+                    android:textColor="@color/heiS" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/baiS">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/x16"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/x16"
+            android:paddingTop="@dimen/x16">
+
+            <ImageView
+                android:id="@+id/item_recycler_home_exercises_logo"
+                android:layout_width="@dimen/x65"
+                android:layout_height="@dimen/x61"
+                android:layout_marginLeft="@dimen/x28"
+                android:layout_marginStart="@dimen/x28"
+                android:src="@drawable/ic_home_xt" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x20"
+                android:layout_marginStart="@dimen/x20"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/item_recycler_home_exercises_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:text="有理数"
+                    android:textColor="#2c2c2c"
+                    android:textSize="@dimen/x24"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/x14"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:text="整数和分数统称为"
+                    android:textColor="#2c2c2c"
+                    android:textSize="@dimen/x24" />
+            </LinearLayout>
+
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="@dimen/x26"
+                android:layout_height="@dimen/x26"
+                android:layout_marginRight="@dimen/x28"
+                android:src="@drawable/microclass_more"/>
+
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x2"
+            android:layout_marginEnd="@dimen/x28"
+            android:layout_marginLeft="@dimen/x28"
+            android:layout_marginRight="@dimen/x28"
+            android:layout_marginStart="@dimen/x28"
+            android:background="#eeeeee" />
+    </LinearLayout>
+
+
+</FrameLayout>

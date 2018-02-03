@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/baiS"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/item_recycler_knowledge_item_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/x28"
+            android:paddingRight="@dimen/x28">
+
+            <TextView
+                android:id="@+id/item_recycler_knowledge_nun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x38"
+                android:gravity="center_vertical"
+                android:text="1 ."
+                android:textColor="@color/heiS"
+                android:textSize="@dimen/x36"/>
+
+
+            <TextView
+                android:id="@+id/item_recycler_knowledge_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x12"
+                android:layout_marginTop="@dimen/x31"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="实数"
+                android:textColor="@color/heiS"
+                android:textSize="@dimen/x36"/>
+
+
+            <ImageView
+                android:id="@+id/item_recycler_knowledge_img"
+                android:layout_width="@dimen/x20"
+                android:layout_height="@dimen/x28"
+                android:layout_marginTop="@dimen/x35"
+                android:src="@drawable/microclass_more"/>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/x32"
+            android:layout_marginTop="@dimen/x28"
+            android:paddingLeft="@dimen/x28"
+            android:paddingRight="@dimen/x28">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="已学"
+                android:textColor="@color/knowS"
+                android:textSize="@dimen/x24"/>
+
+
+            <me.zhouzhuo.zzhorizontalprogressbar.ZzHorizontalProgressBar
+                android:id="@+id/item_recycler_knowledge_progress"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/x10"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/x9"
+                android:layout_weight="1"
+                app:zpb_bg_color="@color/progress_bg"
+                app:zpb_max="100"
+                app:zpb_padding="@dimen/x10"
+                app:zpb_pb_color="@color/progress_pr"
+                app:zpb_progress="50"/>
+
+
+            <TextView
+                android:id="@+id/item_recycler_knowledge_proportion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x10"
+                android:gravity="center_vertical"
+                android:text="50%"
+                android:textColor="@color/knowS"
+                android:textSize="@dimen/x24"/>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/item_recycler_knowledge_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x2"
+                android:background="@color/bj"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x28"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/x28"
+                android:paddingRight="@dimen/x28">
+
+
+                <TextView
+                    android:id="@+id/item_recycler_knowledge_contont"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/knowS"
+                    android:textSize="@dimen/x24"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right">
+
+
+                    <ImageView
+                        android:id="@+id/item_recycler_knowledge_collection"
+                        android:layout_width="@dimen/x44"
+                        android:layout_height="@dimen/x44"
+                        android:layout_marginBottom="@dimen/x19"
+                        android:layout_marginTop="@dimen/x29"
+                        android:src="@drawable/more_curriculum_collection_no"/>
+
+
+                    <LinearLayout
+                        android:id="@+id/item_recycler_knowledge_see"
+                        android:layout_width="@dimen/x176"
+                        android:layout_height="@dimen/x52"
+                        android:layout_marginBottom="@dimen/x15"
+                        android:layout_marginLeft="@dimen/x36"
+                        android:layout_marginTop="@dimen/x24"
+                        android:background="@drawable/examination_analysis_backg"
+                        android:orientation="horizontal">
+
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/x32"
+                            android:layout_marginRight="@dimen/x18"
+                            android:background="@color/touS"
+                            android:text="查看微课"
+                            android:textColor="@color/knowS"
+                            android:textSize="@dimen/x24"/>
+
+
+                        <ImageView
+                            android:layout_width="@dimen/x8"
+                            android:layout_height="@dimen/x16"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="@dimen/x22"
+                            android:src="@drawable/knowledge_seleta"/>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

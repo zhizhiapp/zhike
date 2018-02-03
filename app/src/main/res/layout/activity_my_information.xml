@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/_my_information"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/bj">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x96"
+            android:background="@drawable/intelligenttest_title_backg">
+
+
+            <ImageView
+                android:id="@+id/my_information_return"
+                android:layout_width="@dimen/x40"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/x26"
+                android:layout_marginLeft="@dimen/x30"
+                android:layout_marginTop="@dimen/x26"
+                android:src="@drawable/intelligenttest_return"/>
+
+            <TextView
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="个人信息"
+                android:textColor="@color/homeText"
+                android:textSize="@dimen/x35"/>
+
+            <Button
+                android:id="@+id/my_information_preservation"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@color/touS"
+                android:text="保存"
+                android:textColor="@color/wcS"
+                android:textSize="@dimen/x30"/>
+
+
+        </RelativeLayout>
+
+
+        <!--<com.makeramen.roundedimageview.RoundedImageView-->
+            <!--android:id="@+id/my_information_header"-->
+            <!--android:layout_width="@dimen/x181"-->
+            <!--android:layout_height="@dimen/x181"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_marginBottom="@dimen/x30"-->
+            <!--android:layout_marginTop="@dimen/x18"-->
+            <!--android:src="@drawable/icon_error"-->
+            <!--app:riv_oval="true"/>-->
+
+
+
+        <com.example.administrator.zhike.view.CircleImageView
+            android:id="@+id/my_information_header"
+            android:layout_width="@dimen/x181"
+            android:layout_height="@dimen/x181"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/x30"
+            android:layout_marginTop="@dimen/x18"
+            android:src="@drawable/icon_error"
+            app:border_color="@color/touS"
+            app:border_width="@dimen/x2"
+            />
+
+
+
+
+
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x100"
+            android:background="@color/baiS"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/x28">
+
+
+            <TextView
+                android:layout_width="@dimen/x150"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="昵称"
+                android:textColor="@color/heiS"
+                android:textSize="@dimen/x30"/>
+
+            <EditText
+                android:id="@+id/my_information_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/touS"
+                android:gravity="center_vertical"
+                android:hint="点击输入"
+                android:textColor="@color/heiS"
+                android:textColorHint="@color/myxx"
+                android:textSize="@dimen/x30"/>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x100"
+            android:layout_marginTop="@dimen/x3"
+            android:background="@color/baiS"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/x28">
+
+
+            <TextView
+                android:layout_width="@dimen/x150"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="账号"
+                android:textColor="@color/heiS"
+                android:textSize="@dimen/x30"/>
+
+            <TextView
+                android:id="@+id/my_information_call"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/touS"
+                android:gravity="center_vertical"
+                android:text="13131414"
+                android:textColor="@color/heiS"
+                android:textSize="@dimen/x30"/>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x100"
+            android:layout_marginTop="@dimen/x3"
+            android:background="@color/baiS"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/x28">
+
+
+            <TextView
+                android:layout_width="@dimen/x150"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="邮箱"
+                android:textColor="@color/heiS"
+                android:textSize="@dimen/x30"/>
+
+            <EditText
+                android:id="@+id/my_information_main"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/touS"
+                android:gravity="center_vertical"
+                android:hint="点击输入"
+                android:textColor="@color/heiS"
+                android:textColorHint="@color/myxx"
+                android:textSize="@dimen/x30"/>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x100"
+            android:layout_marginTop="@dimen/x3"
+            android:background="@color/baiS"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/x28">
+
+
+            <TextView
+                android:layout_width="@dimen/x150"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="目前院校"
+                android:textColor="@color/heiS"
+                android:textSize="@dimen/x30"/>
+
+            <EditText
+                android:id="@+id/my_information_school"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/touS"
+                android:gravity="center_vertical"
+                android:hint="点击输入"
+                android:textColor="@color/heiS"
+                android:textColorHint="@color/myxx"
+                android:textSize="@dimen/x30"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x100"
+            android:layout_marginTop="@dimen/x3"
+            android:background="@color/baiS"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/x28">
+
+
+            <TextView
+                android:layout_width="@dimen/x150"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="目标专业"
+                android:textColor="@color/heiS"
+                android:textSize="@dimen/x30"/>
+
+            <EditText
+                android:id="@+id/my_information_major"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/touS"
+                android:gravity="center_vertical"
+                android:hint="点击输入"
+                android:textColor="@color/heiS"
+                android:textColorHint="@color/myxx"
+                android:textSize="@dimen/x30"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x100"
+            android:layout_marginTop="@dimen/x20"
+            android:background="@color/baiS"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/x28">
+
+
+            <TextView
+                android:layout_width="@dimen/x150"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="性别"
+                android:textColor="@color/heiS"
+                android:textSize="@dimen/x30"/>
+
+            <TextView
+                android:id="@+id/my_information_sex"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/touS"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:textColor="@color/heiS"
+                android:textSize="@dimen/x30"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x100"
+            android:layout_marginTop="@dimen/x3"
+            android:background="@color/baiS"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/x28">
+
+
+            <TextView
+                android:layout_width="@dimen/x150"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="地区"
+                android:textColor="@color/heiS"
+                android:textSize="@dimen/x30"/>
+
+            <Button
+                android:id="@+id/my_information_address"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/touS"
+                android:gravity="center_vertical"
+                android:hint="点击选择"
+                android:textColor="@color/heiS"
+                android:textColorHint="@color/myxx"
+                android:textSize="@dimen/x30"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/my_information_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#A1010000"
+        android:orientation="vertical"
+        android:visibility="gone">
+    </LinearLayout>
+
+
+</RelativeLayout>

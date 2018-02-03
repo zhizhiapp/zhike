@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bj"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x96"
+        android:background="@drawable/intelligenttest_title_backg">
+
+
+        <ImageView
+            android:id="@+id/home_news_return"
+            android:layout_width="@dimen/x40"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/x26"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_marginTop="@dimen/x26"
+            android:src="@drawable/intelligenttest_return"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="消息中心"
+            android:textStyle="bold"
+            android:textColor="@color/homeText"
+            android:textSize="@dimen/x35"/>
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/home_news_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_width="@dimen/x128"
+            android:layout_height="@dimen/x94"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/x117"
+            android:src="@drawable/home_news"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/x25"
+            android:gravity="center"
+            android:text="暂无消息"
+            android:textColor="@color/collection"
+            android:textSize="@dimen/x30"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/x28"
+            android:gravity="center"
+            android:text="快去别的页面学习吧!"
+            android:textColor="@color/collection"
+            android:textSize="@dimen/x30"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

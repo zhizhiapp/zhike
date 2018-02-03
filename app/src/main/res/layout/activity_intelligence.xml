@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bj"
+              android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x96"
+        android:background="@drawable/intelligenttest_title_backg"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:id="@+id/intelligence_return"
+            android:layout_width="@dimen/x40"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/x26"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_marginTop="@dimen/x26"
+            android:src="@drawable/intelligenttest_return"/>
+
+        <TextView
+            android:textStyle="bold"
+            android:id="@+id/intelligence_title"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:lines="1"
+            android:textColor="@color/homeText"
+            android:textSize="@dimen/x35"/>
+
+
+        <ImageView
+            android:id="@+id/intelligence_share"
+            android:layout_width="@dimen/x40"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/x26"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_marginRight="@dimen/x30"
+            android:layout_marginTop="@dimen/x26"
+            android:src="@drawable/intelligence_share"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/intelligence_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x400">
+
+                <ImageView
+
+                    android:id="@+id/intelligence_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#55000000"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/x203"
+                    android:background="#55000000"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/x28"
+                    android:paddingRight="@dimen/x28">
+
+                    <TextView
+                        android:id="@+id/intelligence_relative_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical"
+                        android:lineSpacingExtra="@dimen/x10"
+                        android:lines="2"
+                        android:textColor="@color/baiS"
+                        android:textSize="@dimen/x30"/>
+
+                    <TextView
+                        android:id="@+id/intelligence_relative_contont"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/x20"
+                        android:layout_marginTop="@dimen/x12"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical"
+                        android:lineSpacingExtra="@dimen/x7"
+                        android:lines="2"
+                        android:textColor="@color/baiS"
+                        android:textSize="@dimen/x24"/>
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/intelligence_contont"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x20"
+                android:lineSpacingExtra="@dimen/x20"
+                android:paddingLeft="@dimen/x26"
+                android:paddingRight="@dimen/x26"
+                android:textColor="@color/heiS"
+                android:textSize="@dimen/x30"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x30"
+                android:gravity="right"
+                android:orientation="horizontal"
+                android:paddingRight="@dimen/x28">
+
+
+                <ImageView
+                    android:id="@+id/intelligence_zan"
+                    android:layout_width="@dimen/x44"
+                    android:layout_height="@dimen/x44"
+                    android:layout_marginRight="@dimen/x28"
+                    android:src="@drawable/intelligence_zan_no"/>
+
+                <ImageView
+                    android:id="@+id/intelligence_collection"
+                    android:layout_width="@dimen/x44"
+                    android:layout_height="@dimen/x44"
+                    android:src="@drawable/intelligence_collection_no"/>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/x28">
+
+
+                <ImageView
+                    android:layout_width="@dimen/x5"
+                    android:layout_height="match_parent"
+                    android:paddingBottom="@dimen/x20"
+                    android:paddingTop="@dimen/x16"
+                    android:src="@drawable/home_microclass_verti"/>
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/x20"
+                    android:layout_marginLeft="@dimen/x6"
+                    android:layout_marginTop="@dimen/x22"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="相关推荐"
+                    android:textColor="@color/heiS"
+                    android:textSize="@dimen/x30"/>
+
+            </LinearLayout>
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/intelligence_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x24"
+                android:overScrollMode="never"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

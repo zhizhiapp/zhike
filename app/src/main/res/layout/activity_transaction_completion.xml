@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="@dimen/x531"
+        android:layout_height="@dimen/x576"
+        android:background="@drawable/transaction_completion_bj"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/x63">
+
+
+        <ImageView
+            android:layout_width="@dimen/x178"
+            android:layout_height="@dimen/x178"
+            android:layout_gravity="center"
+            android:src="@drawable/transaction_completion_yes" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/x37"
+            android:background="@drawable/b2"
+            android:gravity="center"
+            android:text="支付完成，完成交易"
+            android:textColor="@color/homeText"
+            android:textSize="@dimen/x45" />
+
+
+        <TextView
+            android:id="@+id/transaction_completion_money"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x121"
+            android:layout_marginTop="@dimen/x31"
+            android:background="@drawable/b2"
+            android:gravity="center_vertical"
+            android:text="支付金额 : ￥2000"
+            android:textColor="@color/homeText"
+            android:textSize="@dimen/x24" />
+
+        <TextView
+            android:id="@+id/transaction_completion_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x121"
+            android:layout_marginTop="@dimen/x13"
+            android:background="@drawable/b2"
+            android:gravity="center_vertical"
+            android:text="订单号 : 8888888888888888"
+            android:textColor="@color/homeText"
+            android:textSize="@dimen/x24" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x44"
+            android:layout_marginTop="@dimen/x45"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/transaction_completion_details"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/x63"
+                android:layout_weight="1"
+                android:background="@drawable/my_shopping_cart_settlement_return_recycler_coupon_yes"
+                android:text="订单详情"
+                android:textColor="@color/homeText"
+                android:textSize="@dimen/x24" />
+
+            <Button
+                android:id="@+id/transaction_completion_continue"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/x69"
+                android:layout_marginRight="@dimen/x63"
+                android:layout_weight="1"
+                android:background="@drawable/my_shopping_cart_settlement_return_recycler_coupon_yes"
+                android:text="继续购买"
+                android:textColor="@color/homeText"
+                android:textSize="@dimen/x24" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

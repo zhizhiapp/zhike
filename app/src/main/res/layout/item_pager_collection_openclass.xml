@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/item_pager_collection_openclass_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x70"
+        android:background="@color/baiS"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/x28"
+        android:paddingRight="@dimen/x28">
+
+
+        <TextView
+            android:id="@+id/item_pager_collection_openclass_title"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/x12"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="绝对值和平均值绝对"
+            android:textColor="@color/heiS"
+            android:textSize="@dimen/x30"/>
+
+
+        <ImageView
+            android:layout_width="@dimen/x26"
+            android:layout_height="@dimen/x26"
+            android:layout_gravity="center"
+            android:src="@drawable/microclass_more"/>
+
+
+    </LinearLayout>
+
+
+    <fm.jiecao.jcvideoplayer_lib.JCVideoPlayerStandard
+        android:id="@+id/item_pager_collection_openclass_video"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x373"
+        android:layout_marginLeft="@dimen/x28"
+        android:layout_marginRight="@dimen/x28"
+        android:visibility="gone"/>
+
+
+</LinearLayout>

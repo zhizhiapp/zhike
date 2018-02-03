@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/baiS"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/item_recycler_pager_catalog_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/x28"
+        android:paddingRight="@dimen/x28">
+
+        <ImageView
+            android:layout_width="@dimen/x5"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/x19"
+            android:paddingTop="@dimen/x20"
+            android:src="@drawable/home_microclass_verti" />
+
+        <TextView
+            android:id="@+id/item_recycler_pager_catalog_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/x19"
+            android:layout_marginLeft="@dimen/x9"
+            android:layout_marginTop="@dimen/x23"
+            android:gravity="center_vertical"
+            android:text="第一章"
+            android:textColor="@color/huiS"
+            android:textSize="@dimen/x30" />
+
+
+        <ImageView
+            android:id="@+id/item_recycler_pager_catalog_img"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/x28"
+            android:src="@drawable/pager_synopsis_open" />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/item_recycler_pager_catalog_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:overScrollMode="never"
+        android:paddingLeft="@dimen/x28"
+        android:paddingRight="@dimen/x28"
+        android:visibility="gone" />
+
+
+</LinearLayout>

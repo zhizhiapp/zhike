@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bj">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x96"
+            android:background="@drawable/intelligenttest_title_backg">
+
+
+            <ImageView
+                android:id="@+id/about_zk_return"
+                android:layout_width="@dimen/x40"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/x26"
+                android:layout_marginLeft="@dimen/x30"
+                android:layout_marginTop="@dimen/x26"
+                android:src="@drawable/intelligenttest_return" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="关于雄松智课"
+                android:textStyle="bold"
+                android:textColor="@color/homeText"
+                android:textSize="@dimen/x35" />
+
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="@dimen/x143"
+            android:layout_height="@dimen/x127"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/x64"
+            android:src="@drawable/login" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/x26"
+            android:gravity="center"
+            android:text="雄松智课"
+            android:textColor="@color/heiS"
+            android:textSize="@dimen/x50"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/about_zk_version"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/x15"
+            android:gravity="center"
+            android:text="V1.1.1"
+            android:textColor="#6f6f6f"
+            android:textSize="@dimen/x30" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x1"
+            android:layout_marginLeft="@dimen/x130"
+            android:layout_marginRight="@dimen/x130"
+            android:layout_marginTop="@dimen/x31"
+            android:background="#6f6f6f" />
+
+        <TextView
+            android:textColor="#6f6f6f"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/x46"
+            android:lineSpacingExtra="@dimen/x17"
+            android:layout_marginLeft="@dimen/x130"
+            android:layout_marginRight="@dimen/x130"
+            android:text="@string/adout_text"
+            android:textSize="@dimen/x30" />
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

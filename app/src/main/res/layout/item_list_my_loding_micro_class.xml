@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bj"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/x28"
+        android:paddingRight="@dimen/x28">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x50"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/item_list_my_loding_micro_class_title"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="假装是个名字"
+                android:textColor="@color/huiS"
+                android:textSize="@dimen/x30" />
+
+            <ImageView
+                android:layout_width="@dimen/x16"
+                android:layout_height="match_parent"
+                android:src="@drawable/microclass_more" />
+        </LinearLayout>
+
+
+        <fm.jiecao.jcvideoplayer_lib.JCVideoPlayerStandard
+            android:id="@+id/item_list_my_loding_micro_class_video"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x373" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bj">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x217"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/x26"
+        android:paddingLeft="@dimen/x28"
+        android:paddingRight="@dimen/x28"
+        android:paddingTop="@dimen/x27">
+
+
+        <ImageView
+            android:id="@+id/item_recycler_my_shopping_cart_settlement_img"
+            android:layout_width="@dimen/x224"
+            android:layout_height="@dimen/x164"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            android:src="@drawable/hhhhhhhhhhhhhhh" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/x27">
+
+
+            <TextView
+                android:id="@+id/item_recycler_my_shopping_cart_settlement_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="@dimen/x8"
+                android:text="2018年管理类联考9月份模拟综合考卷"
+                android:textColor="@color/homeText"
+                android:textSize="@dimen/x24" />
+
+
+            <TextView
+                android:id="@+id/item_recycler_my_shopping_cart_settlement_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:gravity="center_vertical"
+                android:text="￥599"
+                android:textColor="@color/hongS"
+                android:textSize="@dimen/x30" />
+
+
+            <Button
+                android:id="@+id/item_recycler_my_shopping_cart_settlement_collection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:background="@color/touS"
+                android:gravity="center_vertical"
+                android:text="移入收藏夹"
+                android:textColor="#848484"
+                android:textSize="@dimen/x24" />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

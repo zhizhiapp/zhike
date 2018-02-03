@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x430"
+        android:background="#F6F7F9"
+        android:orientation="vertical">
+
+
+        <com.example.administrator.zhike.view.PickerScrollViewCurriculum
+            android:id="@+id/psv_wheel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+        <Button
+            android:id="@+id/bt_complete"
+            android:layout_width="@dimen/x88"
+            android:layout_height="@dimen/x50"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/x28"
+            android:layout_marginTop="@dimen/x7"
+            android:background="@drawable/examination_analysis_backg"
+            android:text="完成"
+            android:textColor="@color/wcS"
+            android:textSize="@dimen/x24" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

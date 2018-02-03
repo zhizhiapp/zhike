@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.administrator.zhike">
+
+
+    <!--android:theme="@android:style/Theme.Black.NoTitleBar"-->
+
+    <application
+        android:name="base.BaseApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+        <activity android:name=".StartActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".GuidePageActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".MainActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".LoginActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".RegisterActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".PermissionsActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".HomeIntelligentTestActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".ExaminationAnalysisActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".IntelligentTestZhenTiActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".ExercisesActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".ZhentiActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".KnowledgeActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".SchemeAnalysisActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".RankingActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".MicrovideoActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".IntelligenceActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".SingleExerciseActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".MyShoppingCartActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".MyShoppingCartSettlementActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".TransactionCompletionActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".LoginMsmActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".BackActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".MyLodingActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ProvincialUrbanAreaActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".AboutActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".AboutZkActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".SignActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".MyInformationActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".MyLearningRecordsActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".MyWrongTitleRecordsActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".MyCollectionActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MyOpenClassActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".IntelligenceMoreActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".HomeArtificialActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".HomeNewsActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".HomeSeleteActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".xxxxxxxxxxxxxxxxxxxxxx"
+            android:launchMode="singleTop" />
+
+        <activity
+            android:name=".InvitingFriendsActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+
+        <!-- 微信分享:该Activity用于回调的,android:exported="true"表示允许该Activity被其他应用调用，这句话很重要。-->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTask" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.example.cameraalbumtest.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+
+    </application>
+
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <!--请求访问使用照相设备-->
+    <uses-permission android:name="android.permission.CAMERA" />
+
+
+</manifest>

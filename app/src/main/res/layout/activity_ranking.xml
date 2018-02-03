@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bj"
+              android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x96"
+        android:background="@drawable/intelligenttest_title_backg">
+
+
+        <ImageView
+            android:id="@+id/rankin_return"
+            android:layout_width="@dimen/x40"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/x26"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_marginTop="@dimen/x26"
+            android:src="@drawable/intelligenttest_return"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="排名"
+            android:textColor="@color/homeText"
+            android:textSize="@dimen/x35"
+            android:textStyle="bold"/>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:id="@+id/rankin_choice"
+                android:layout_width="@dimen/x200"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/rankin_choice_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:lines="1"
+                    android:text="课程选择"
+                    android:textColor="@color/homeText"
+                    android:textSize="@dimen/x25"
+                    />
+
+
+                <ImageView
+                    android:id="@+id/rankin_choice_img"
+                    android:layout_width="@dimen/x26"
+                    android:layout_height="@dimen/x16"
+                    android:layout_gravity="center"
+                    android:paddingLeft="@dimen/x10"
+                    android:src="@drawable/microclass_more"/>
+            </LinearLayout>
+
+            <Spinner
+                android:id="@+id/rankin_choice_spinner"
+                android:layout_width="@dimen/x200"
+                android:layout_height="1dp"
+                android:background="@color/baiS"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="visible"/>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:id="@+id/rankin_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x180"
+                android:layout_marginBottom="@dimen/x20"
+                android:background="#def3ed"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/x28"
+                android:paddingRight="@dimen/x28">
+
+
+                <com.example.administrator.zhike.view.CircleImageView
+                    android:id="@+id/rankin_header"
+                    android:layout_width="@dimen/x151"
+                    android:layout_height="@dimen/x151"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/x15"
+                    android:layout_marginTop="@dimen/x15"
+                    android:src="@drawable/icon_error"
+                    app:border_color="@color/touS"
+                    app:border_width="@dimen/x2"
+                    />
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/x15"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/rankin_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/x16"
+                        android:textColor="@color/pm"
+                        android:textSize="@dimen/x30"/>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="掌握率"
+                            android:textColor="@color/pm"
+                            android:textSize="@dimen/x30"/>
+
+                        <TextView
+                            android:id="@+id/rankin_rate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/x8"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/homeText"
+                            android:textSize="@dimen/x36"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/rankin_ranking"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/homeText"
+                    android:textSize="@dimen/x36"/>
+            </LinearLayout>
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rankin_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:overScrollMode="never"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

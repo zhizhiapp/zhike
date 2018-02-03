@@ -1,0 +1,21 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle" >
+
+     
+    <!-- 设置边框的大小和颜色 -->
+    <stroke
+        android:width="@dimen/x1"
+        android:color="#31ac7d"
+        />
+ 
+    <!-- 设置图形内的颜色,此处为透明色 -->
+    <solid android:color="#31ac7d" />
+ 
+    <!-- 定义圆角弧度 圆的话就是半径 -->
+    <corners
+        android:bottomLeftRadius="@dimen/x10"
+        android:bottomRightRadius="@dimen/x10"
+        android:topLeftRadius="@dimen/x10"
+        android:topRightRadius="@dimen/x10" />
+ 
+</shape>

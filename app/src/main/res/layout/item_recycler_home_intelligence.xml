@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/baiS"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:paddingLeft="@dimen/x28"
+        android:paddingRight="@dimen/x28"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/x20"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/item_recycler_home_intelligence_logo"
+            android:layout_width="@dimen/x288"
+            android:layout_height="@dimen/x169"
+            android:background="@drawable/home_intelligence"
+            android:padding="@dimen/x12"
+            android:scaleType="fitXY"
+            android:src="@drawable/hhhhhhhhhhhhhhh" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/x24"
+            android:layout_marginStart="@dimen/x24"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/item_recycler_home_intelligence_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="标题"
+                android:textColor="@color/huiS"
+                android:textSize="@dimen/x27" />
+
+
+            <TextView
+                android:lineSpacingExtra="@dimen/x8"
+                android:id="@+id/item_recycler_home_intelligence_content"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/x20"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:lines="2"
+                android:text="内容"
+                android:textColor="#8f8f8f"
+                android:textSize="@dimen/x27"
+                android:visibility="visible" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

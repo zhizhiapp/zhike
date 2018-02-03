@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/baiS">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x188"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/x32"
+        android:paddingLeft="@dimen/x28"
+        android:paddingTop="@dimen/x32">
+
+
+        <RelativeLayout
+            android:layout_width="@dimen/x244"
+            android:layout_height="@dimen/x124">
+
+            <ImageView
+                android:id="@+id/item_recycler_curriculum_img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/more_curriculum_img"/>
+
+
+            <ImageView
+                android:layout_width="@dimen/x45"
+                android:layout_height="@dimen/x45"
+                android:layout_centerInParent="true"
+                android:src="@drawable/video_play"/>
+
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/x18"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/item_recycler_curriculum_title"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:lineSpacingExtra="@dimen/x8"
+                android:lines="2"
+                android:paddingRight="@dimen/x30"
+                android:text="大哥fdfdsdsfddf大姐广会馆"
+                android:textColor="@color/heiS"
+                android:textSize="@dimen/x24"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x43"
+                android:gravity="right"
+                android:orientation="horizontal"
+                android:paddingRight="@dimen/x28">
+
+
+                <ImageView
+                    android:id="@+id/item_recycler_curriculum_collection"
+                    android:layout_width="@dimen/x45"
+                    android:layout_height="@dimen/x43"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/x24"
+                    android:src="@drawable/more_curriculum_collection_no"/>
+
+
+                <ImageView
+                    android:id="@+id/item_recycler_curriculum_vehicle"
+                    android:layout_width="@dimen/x45"
+                    android:layout_height="@dimen/x41"
+                    android:layout_gravity="center"
+                    android:src="@drawable/more_curriculum_vehicle_no"/>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

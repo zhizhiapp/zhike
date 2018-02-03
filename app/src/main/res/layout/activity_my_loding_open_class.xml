@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bj"
+              android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/my_loding_open_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_width="@dimen/x128"
+            android:layout_height="@dimen/x94"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/x117"
+            android:src="@drawable/my_collection_no_microclas"/>
+
+
+        <TextView
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/x25"
+            android:gravity="center"
+            android:text="暂无下载"
+            android:textColor="@color/collection"
+            android:textSize="@dimen/x30"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/x28"
+            android:gravity="center"
+            android:text="快去公开课页面学习吧!"
+            android:textColor="@color/collection"
+            android:textSize="@dimen/x30"/>
+
+
+        <TextView
+            android:id="@+id/my_loding_open_openclass"
+            android:layout_width="@dimen/x215"
+            android:layout_height="@dimen/x63"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/x95"
+            android:background="@drawable/examination_analysis_backg"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="公开课"
+            android:textColor="@color/homeText"
+            android:textSize="@dimen/x40"/>
+
+
+    </LinearLayout>
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/my_loding_open_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:overScrollMode="never"/>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/bj">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x96"
+            android:background="@drawable/intelligenttest_title_backg">
+
+
+            <ImageView
+                android:id="@+id/microvideo_return"
+                android:layout_width="@dimen/x40"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/x26"
+                android:layout_marginLeft="@dimen/x30"
+                android:layout_marginTop="@dimen/x26"
+                android:src="@drawable/intelligenttest_return"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="微课"
+                android:textStyle="bold"
+                android:textColor="@color/homeText"
+                android:textSize="@dimen/x35"/>
+
+
+            <LinearLayout
+                android:id="@+id/microvideo_choice"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/x28"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/microvideo_choice_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/x23"
+                    android:gravity="center_vertical"
+                    android:text="科目选择"
+                    android:textColor="@color/homeText"
+                    android:textSize="@dimen/x28"/>
+
+
+                <ImageView
+                    android:id="@+id/microvideo_choice_img"
+                    android:layout_width="@dimen/x20"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:src="@drawable/microclass_more"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/microvideo_section"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/x71"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/x28"
+                    android:paddingRight="@dimen/x28"
+                    android:text="知识点2"
+                    android:textColor="@color/huiS"
+                    android:textSize="@dimen/x30"/>
+
+
+
+                <fm.jiecao.jcvideoplayer_lib.JCVideoPlayerStandard
+                    android:layout_marginLeft="@dimen/x28"
+                    android:layout_marginRight="@dimen/x28"
+                    android:id="@+id/microvideo_video"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/x373" />
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/x70"
+                    android:layout_marginTop="@dimen/x20"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/microvideo_synopsis"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/baiS"
+                        android:text="简介"
+                        android:textColor="@color/heiS"
+                        android:textSize="@dimen/x30"/>
+
+                    <Button
+                        android:id="@+id/microvideo_catalog"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/wvideo"
+                        android:text="目录"
+                        android:textColor="@color/heiS"
+                        android:textSize="@dimen/x30"/>
+
+                    <Button
+                        android:id="@+id/microvideo_relevant"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/wvideo"
+                        android:text="相关习题"
+                        android:textColor="@color/heiS"
+                        android:textSize="@dimen/x30"/>
+
+                </LinearLayout>
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/microvideo_choice_viewpager"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/x500"
+                    android:overScrollMode="never"/>
+
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x96"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/baiS"
+            android:text="￥998"
+            android:textColor="@color/hongS"
+            android:textSize="@dimen/x42"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/hongS"
+            android:text="简介"
+            android:textColor="@color/baiS"
+            android:textSize="@dimen/x42"/>
+    </LinearLayout>
+
+</RelativeLayout>

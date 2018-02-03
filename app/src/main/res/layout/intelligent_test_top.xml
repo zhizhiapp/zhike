@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/baiS"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/x20">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x260"
+        android:background="@drawable/l_intelligenttest">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/intelligent_test"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x150"
+                android:layout_marginRight="@dimen/x65"
+                android:layout_marginTop="@dimen/x70"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:textColor="@color/homeText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x150"
+                android:layout_marginRight="@dimen/x65"
+                android:layout_marginTop="@dimen/x10"
+                android:ellipsize="end"
+                android:text="第1~15小题，每小题3分，共45分，下列每题给出的A、B、C、D、E五个选项，只有一个是符合试题要求的。"
+                android:textColor="@color/homeText"
+                android:textSize="@dimen/x22" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

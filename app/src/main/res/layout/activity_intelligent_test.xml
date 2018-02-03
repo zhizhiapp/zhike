@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/intelligenttest_header"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x96"
+            android:background="@drawable/intelligenttest_title_backg">
+
+
+            <ImageView
+                android:id="@+id/intelligent_test_black"
+                android:layout_width="@dimen/x40"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/x26"
+                android:layout_marginLeft="@dimen/x30"
+                android:layout_marginStart="@dimen/x30"
+                android:layout_marginTop="@dimen/x26"
+                android:src="@drawable/intelligenttest_return" />
+
+            <TextView
+                android:id="@+id/intelligent_test_title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="管理类联考"
+                android:textColor="@color/homeText"
+                android:textSize="@dimen/x35" />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/intelligent_test_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x72"
+            android:background="@color/baiS"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/x20">
+
+                <ImageView
+                    android:layout_width="@dimen/x5"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/home_microclass_verti" />
+
+                <ProgressBar
+                    android:id="@+id/pb_time"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/x10"
+                    android:progressDrawable="@drawable/pb_color" />
+
+                <ImageView
+                    android:layout_width="@dimen/x5"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/home_microclass_verti" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/intelligent_test_recorder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:minEms="3"
+                android:text=""
+                android:textColor="@color/homeText"
+                android:textSize="@dimen/x25" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="@dimen/x25"
+                    android:layout_height="@dimen/x25"
+                    android:layout_gravity="center"
+                    android:src="@drawable/intelligenttest_time"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="建议时长 : "
+                    android:textColor="@color/homeText"
+                    android:textSize="@dimen/x25" />
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00:00"
+                    android:textColor="@color/homeText" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/x10"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/intelligent_test_subject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:overScrollMode="never" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
+
+
+
+

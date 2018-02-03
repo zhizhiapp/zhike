@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/_single_exercise"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bj"
+              android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/single_exercise_relative"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x96"
+        android:background="@drawable/intelligenttest_title_backg">
+
+
+        <ImageView
+            android:id="@+id/single_exercise_return"
+            android:layout_width="@dimen/x40"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/x26"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_marginTop="@dimen/x26"
+            android:src="@drawable/intelligenttest_return"/>
+
+        <TextView
+            android:id="@+id/single_exercise_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="单题练习 · 大作文"
+            android:textColor="@color/homeText"
+            android:textSize="@dimen/x35"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/single_exercise_text"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x64"
+        android:gravity="center"
+        android:text="建议时间: 15分钟"
+        android:textColor="@color/dtText"
+        android:textSize="@dimen/x24"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/baiS"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/x28"
+            android:paddingRight="@dimen/x28">
+
+
+            <TextView
+                android:id="@+id/single_exercise_subject"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x64"
+                android:gravity="center_vertical"
+                android:text="英语应用文写作 (共1题，10分)"
+                android:textColor="@color/homeText"
+                android:textSize="@dimen/x24"/>
+
+
+            <TextView
+                android:layout_width="@dimen/x175"
+                android:layout_height="@dimen/x61"
+                android:layout_marginTop="@dimen/x32"
+                android:background="@color/homeText"
+                android:gravity="center"
+                android:text="我的作答"
+                android:textColor="@color/baiS"
+                android:textSize="@dimen/x30"/>
+
+
+            <EditText
+                android:paddingLeft="@dimen/x10"
+                android:paddingRight="@dimen/x10"
+                android:lineSpacingExtra="@dimen/x10"
+                android:gravity="top"
+                android:hint="Are you ok？"
+                android:textColorHint="@color/heiS"
+                android:textSize="@dimen/x30"
+                android:paddingTop="@dimen/x11"
+                android:textColor="@color/heiS"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x139"
+                android:layout_marginTop="@dimen/x16"
+                android:background="@drawable/frame_garden_lv"/>
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x72"
+                android:layout_marginBottom="@dimen/x40"
+                android:layout_marginLeft="@dimen/x101"
+                android:layout_marginRight="@dimen/x101"
+                android:layout_marginTop="@dimen/x48"
+                android:background="@drawable/frame_garden_alllv"
+                android:text="提交试卷"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/x30"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

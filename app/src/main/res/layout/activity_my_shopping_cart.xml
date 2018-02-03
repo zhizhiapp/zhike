@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bj">
+
+
+    <RelativeLayout
+        android:id="@+id/my_shopping_cart_relative"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x96"
+        android:background="@drawable/intelligenttest_title_backg">
+
+
+        <ImageView
+            android:id="@+id/my_shopping_cart_return"
+            android:layout_width="@dimen/x40"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/x26"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_marginTop="@dimen/x26"
+            android:src="@drawable/intelligenttest_return" />
+
+        <TextView
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="购物车"
+            android:textColor="@color/homeText"
+            android:textSize="@dimen/x35" />
+
+    </RelativeLayout>
+
+    <com.example.administrator.delete.SwipeListView
+        android:id="@+id/my_shopping_cart_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/my_shopping_cart_relative"
+        android:layout_above="@+id/my_shopping_cart_layout"
+        android:divider="#ececec"
+        android:dividerHeight="1dp"
+        android:overScrollMode="never" />
+
+
+    <LinearLayout
+        android:id="@+id/my_shopping_cart_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x96"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:id="@+id/quanxuan"
+            android:layout_marginLeft="@dimen/x28"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/my_shopping_cart_checkbox"
+                android:layout_width="@dimen/x37"
+                android:layout_height="@dimen/x37"
+                android:layout_gravity="center_vertical"
+                android:button="@drawable/checkbox_selector"
+                android:clickable="false"
+                android:focusable="false" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/x21"
+                android:gravity="center"
+                android:text="全选"
+                android:textColor="@color/heiS"
+                android:textSize="@dimen/x30" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textSize="@dimen/x36"
+                android:textColor="@color/heiS"
+                android:text="合计 :"/>
+
+            <TextView
+                android:id="@+id/my_shopping_cart_money"
+                android:layout_marginLeft="@dimen/x21"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="@dimen/x36"
+                android:textColor="@color/hongS"
+                android:layout_marginRight="@dimen/x36"
+                android:text="￥0"/>
+
+
+            <Button
+                android:id="@+id/my_shopping_cart_settlement"
+                android:background="@color/hongS"
+                android:text="结算"
+                android:textSize="@dimen/x36"
+                android:textColor="@color/baiS"
+                android:textStyle="bold"
+                android:layout_width="@dimen/x215"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

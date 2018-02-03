@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bj"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x96"
+        android:background="@drawable/intelligenttest_title_backg">
+
+
+        <ImageView
+            android:id="@+id/sheng_fh"
+            android:layout_width="@dimen/x40"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/x26"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_marginTop="@dimen/x26"
+            android:src="@drawable/intelligenttest_return" />
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/shi_fh"
+            android:layout_width="@dimen/x40"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/x26"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_marginTop="@dimen/x26"
+            android:src="@drawable/intelligenttest_return" />
+
+
+        <TextView
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="地址"
+            android:textColor="@color/homeText"
+            android:textSize="@dimen/x35" />
+
+
+    </RelativeLayout>
+
+    <ListView
+        android:overScrollMode="never"
+        android:id="@+id/list_sheng"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#ececec"
+        android:dividerHeight="1dp" />
+
+    <ListView
+        android:overScrollMode="never"
+        android:id="@+id/list_shi"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#ececec"
+        android:dividerHeight="1dp"
+        android:visibility="gone" />
+
+
+</LinearLayout>

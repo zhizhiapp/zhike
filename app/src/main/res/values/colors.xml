@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="baiS">#FFffff</color>//白色
+    <color name="hongS">#FF0000</color>//红色
+    <color name="touS">#00000000</color>//透明
+    <color name="heiS">#000000</color>//黑色
+    <color name="danlvS">#31ac7d</color>//首页点击
+    <color name="huiS">#2c2c2c</color>//首页未点击
+
+    <color name="homeText">#31ac7d</color>// 首页字体颜色
+    <color name="toText">#fefefe</color>// 试题弹框字体颜色
+    <color name="xian">#adddcb</color>//
+    <color name="myxian">#eaeaea</color>//我的线
+
+    <color name="progress_bg">#aadac9</color>//进度条背景
+    <color name="progress_pr">#2a3431</color>// 进度条
+
+    <color name="btouS">#66ffffff</color>// 进度条
+
+
+    <color name="jd_bg">#cceee3</color>//智能分析进度条背景
+    <color name="jdS">#7ecbaf</color>// 智能分析进度条
+
+    <color name="wcS">#32ac7e</color>// 完成
+
+    <color name="knowS">#34ad7f</color>// 知识库
+
+
+    <color name="hhhS">#95ffffff</color>// 进度条
+    <color name="zhS">#7dcdb1</color>// 智慧方案
+    <color name="zhbj">#1531ac7d</color>// 智慧方案
+
+
+    <color name="bj">#f6f7f9</color>// 整体背景颜色
+
+    <color name="pm">#343434</color>// 排名
+    <color name="wvideo">#cbebe0</color>// 微视频
+
+    <color name="wvideoText">#303030</color>// 简介
+    <color name="dtText">#7FCEB1</color>// 单题练习
+
+    <color name="banhei">#55000000</color>// 单题练习
+    <color name="Coupon">#707070</color>// 支付宝
+    <color name="ImmediateUse">#898989</color>// 立即使用
+
+    <color name="myxx">#afafaf</color>// 立即使用
+    <color name="about">#3bad7c</color>// 立即使用
+    <color name="myloding">#c6e6dc</color>// 立即使用
+
+
+    <color name="sign">#e2efec</color>// 立即使用
+    <color name="collection">#aaaaaa</color>// 我的收藏
+
+
+
+
+</resources>
